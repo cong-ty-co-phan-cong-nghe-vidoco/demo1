@@ -5,11 +5,11 @@
 
 @font-face {
     font-family: 'myFont';
-    src: url('vcouri-webfont.eot');
-    src: url('vcouri-webfont.eot?#iefix'), /* IE4+ */
-         url('vcouri-webfont.woff') format('woff'),
-         url('vcouri-webfont.ttf') format('truetype'), /* font chuan */
-         url('vcouri-webfont.svg#vni-courinormal') format('svg'); /* iphone, ipad*/
+    src: url('fonts/FontAwesome.otf');
+    src: url('fonts/fontawesome-webfont'), /* IE4+ */
+         url('fonts/vcouri-webfont') format('woff'),
+         url('fonts/vcouri-webfont') format('truetype'), /* font chuan */
+         url('fonts/fontawesome-webfont') format('svg'); /* iphone, ipad*/
 }
 .awe-section-1 {
     margin-bottom: 25px;
@@ -44,4 +44,64 @@
     position: absolute;
     left: 0;
     bottom: -1px;
+}
+.mn-right .search-ic {
+    cursor: pointer;
+}
+.mn-right>ul>li i {
+    font-size: 20px;
+}
+.header_search {
+    
+}
+.mn-right .search-ic {
+    cursor: pointer;
+}
+.mn-right>ul>li {
+    line-height: 73px;
+    position: relative;
+}
+.list-inline li {
+    float: left;
+    margin: 0;
+}
+.list-inline>li {
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+.list-inline{
+    margin-top: -10px;
+}
+.input-group-btn>.btn {
+    position: relative;
+}
+.input-group .input-group-field {
+    width: 100%;
+    margin-bottom: 0;
+}
+.input-group .btn, .input-group input[type="submit"], .input-group .input-group-field {
+    height: 40px;
+}
+.awe-section-1 {
+    margin-bottom: 25px;
+}
+.danh-muc-title {
+    font-size: 30px;
+    text-align: center;
+    text-transform: capitalize;
+}
+.cate-item {
+    margin: 15px 0;
+}
+.cate-item>div {
+    border: 1px solid #e1e1e1;
+    text-align: center;
+}
+.cate-item .cate-title a {
+    text-transform: uppercase;
+    color: #48290c;
+    display: block;
+    padding: 10px 0;
+    font-weight: bold;
 }
