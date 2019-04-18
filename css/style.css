@@ -422,3 +422,100 @@ footer {
     overflow: hidden;
     color: #fff;
 }
+ul.list-menu li {
+    list-style-type: none;
+}
+ul.list-menu li a {
+    color: #fff;
+}
+ul.list-menu {
+    padding-left: 0;
+}
+ul.inline-list.social-icons {
+    padding-left: 0px;
+}
+ul.inline-list.social-icons li {
+    list-style-type: none;
+    float: left;
+    margin-right: 10px;
+}
+ul.inline-list.social-icons li a {
+    color: #fff;
+}
+.footer-widget .article-thumb {
+    float: left;
+    display: block;
+    width: 20%;
+    margin-right: 10px;
+}
+.footer-widget .article-info {
+    
+
+}
+.footer-widget h3.blog-item-name {
+    margin: 0;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 0;
+    text-transform: none;
+}
+footer .site-footer h3 {
+    position: relative;
+    color: #fff;
+    margin: 0;
+    padding: 13px 0;
+    font-size: 1.28571em;
+}
+.footer-widget h3.blog-item-name a {
+    color: #fff;
+}
+.footer-widget .article-info .post-info span {
+    margin-right: 5px;
+}
+footer-widget .article-info .post-info span .fa {
+    margin-right: 3px;
+}
+article.img {
+    float: left;
+    clear: both;
+    margin-right: 15px;
+}
+article.huongdan-new {
+    margin-bottom: 15px;
+}
+ul.owl-carosel.testi.owl-loaded.owl-drag {
+    padding-left: 0;
+}
+ul.owl-carosel.testi.owl-loaded.owl-drag li {
+    list-style-type: none;
+}
+.comment {
+    width: 65%;
+    float: left;
+    padding: 0 20px;
+    position: relative;
+    text-align: justify;
+    font-style: italic;
+}
+.footer-widget .comment .fa {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.owl-carousel .owl-stage-outer {
+    position: relative;
+    overflow: hidden;
+    -webkit-transform: translate3d(0,0,0);
+}
+.footer-widget .avt {
+    width: 33%;
+    float: right;
+}
+.footer-widget .avt img {
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.footer-widget .avt p {
+    text-align: center;
+    margin-top: 5px;
+}
