@@ -18,8 +18,8 @@
 							</a>
 						</div>
 						<div class="col-md-7 hidden-sm hidden-xs">
-							<nav class="navbar navbar-default" role="navigation">
-							    <div class="row">
+							<nav>
+								<ul class="nav" id="nav">
 							        <div class="navbar-header">
 							            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
 							                <span class="sr-only">Đây là menu mobile</span>
@@ -29,24 +29,27 @@
 							            </button>
 							            <!-- <a class="navbar-brand" href="#">Cộng Đồng IT</a> -->
 							        </div>
-							        <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
-							            <ul class="nav navbar-nav">
-							                <li class="active"><a href="#">Giới thiệu</a></li>
-							                <li><a href="#" class="nav-link">Dịch vụ <i class="fa fa-angle-right" data-toggle="dropdown"></i>
-							                </a></li>
-							                <li class="dropdown">
-							                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dự án<span class="caret"></span></a>
-							                    <ul class="dropdown-menu" role="menu">
-							                        <li><a href="#">Plugins 1</a></li>
-							                        <li><a href="#">Plugins 2</a></li>
-							                        <li><a href="#">Plugins 3</a></li>
-							                    </ul>
-							                </li>
-							                <li><a href="#">Tin tức</a></li>
-							                <li><a href="#">Liên hệ</a></li>        
-							            </ul>
-							        </div><!--/.nav-collapse -->
-							    </div>
+								    <li class="nav-item">
+								    	<a href="#" class="nav-link">Giới thiệu</a>
+								    </li>
+								    <li class="nav-item dropdown">
+								    	<a href="#" class="nav-link">Dịch vụ&nbsp;<i class="fa fa-angle-right" data-toggle="dropdown"></i></a>
+								    	<ul class="dropdown-content">
+										    <li class="nav-item-lv2"><a href="#" class="nav-link">Thiết kế nội thất</a></li>
+										    <li class="nav-item-lv2"><a href="#" class="nav-link">Thi công nội thất</a></li>
+										    <li class="nav-item-lv2"><a href="#" class="nav-link">Sản xuất theo yêu cầu</a></li>
+										</ul>
+								    </li>
+								    <li class="nav-item">
+								    	<a href="#" class="nav-link">Dự án</a>
+								    </li>
+								    <li class="nav-item">
+								    	<a href="#" class="nav-link">Tin tức</a>
+								    </li>
+								    <li class="nav-item">
+								    	<a href="#" class="nav-link">Liên hệ</a>
+								    </li>
+							   </ul>
 							</nav>
 						</div>
 						<div class="col-sm-6 col-md-2 mn-right a-center">
@@ -54,12 +57,13 @@
 								<li class="search-ic hidden-sm hidden-xs">
 									<div class="search f-right">
 										<div class="header_search search_form">
-											<form class="input-group search-bar search_form" action="" method="" role="search">
-												<!-- <input type="search" name="query" value placeholder ="Tìm kiếm sản phẩm..." class="input-group-field st-default-search-input search-text"> -->
-												<button class="btn icon-fallback-test">
-													<i class="fa fa-search"></i>
-												</button>
-											</form>
+											<div class="search-wrapper">
+											    <div class="input-holder">
+											        <input type="text" class="search-input" placeholder="Type to search" />
+											        <button class="search-icon" onclick="searchToggle(this, event);"><i class="fa fa-search"></i></button>
+											    </div>
+											    <!-- <span class="close" onclick="searchToggle(this, event);"></span> -->
+											</div>
 										</div>
 									</div>
 								</li>
@@ -844,31 +848,19 @@
 					</h2>
 					<div class="timeline-section">
 						<div class="timeline-wrapper">
-							<div class="col-xs-12 col-sm-12 col-md-5th col-lg-5th col1">
+							<div class="col-xs-12 col-sm-12 col-md-5th col1">
 								<div class="hr-timeline">
 									<div class="timeline-content">
 										<div class="timeline-thumb">
 											<img src="img/sec_timeline1_icon.png">
 										</div>
-										<h3>Tiếp súc và tư vấn</h3>
+										<h3>Tiếp xúc và tư vấn</h3>
 										<p>Kiến trúc sư và quản lý dự án sẽ tiến hành khảo sát thực tế, lắng nghe thông tin, ý tưởng của khách hàng và tiến hành đo đạc, chụp ảnh, tư vấn và lên layout tổng thể cho dự án cần thi công.</p>
 										<h4>01</h4>
 									</div>
 								</div>
 							</div>
-
-							<div class="col-xs-12 col-sm-12 col-md-5th col-lg-5th col2">
-								<div class="hr-timeline bottom">
-									<div class="timeline-content">
-										<h3>Thiết kế và phát triển</h3>
-										<p>Kiến trúc sư sẽ gửi bản vẽ phác thảo dự án 3D và gửi bản dự toán chi phí cho công trình. Khi khách hàng đồng ý tiến hành và kí hợp đồng, chúng tôi sẽ tiếp tục phát triển vẽ chi tiết với nhiều phong cách thiết kế để khách hàng dễ dàng chọn lựa theo sở thích.</p>
-										<div class="timeline-thumb"><img src="img/sec_timeline2_icon.png"></div>
-										<h4>02</h4>
-									</div>
-								</div>
-							</div>
-
-							<!-- <div class="col-xs-12 col-sm-12 col-md-5th col-lg-5th col2">
+							<div class="col-xs-12 col-sm-12 col-md-5th col2">
 								<div class="hr-timeline bottom">
 									<div class="timeline-content">
 										<h3>Thiết kế và phát triển</h3>
@@ -880,9 +872,8 @@
 									</div>
 								</div>
 							</div>
-
-							<div class="col-xs-12 col-sm-12 col-md-5th col-lg-5th col3">
-								<div class="hr-timeline bottom">
+							<div class="col-xs-12 col-sm-12 col-md-5th col3">
+								<div class="hr-timeline">
 									<div class="timeline-content">
 										<div class="timeline-thumb">
 											<img src="img/sec_timeline3_icon.png">
@@ -893,12 +884,11 @@
 									</div>
 								</div>
 							</div>
-
-							<div class="col-xs-12 col-sm-12 col-md-5th col-lg-5th col4">
+							<div class="col-xs-12 col-sm-12 col-md-5th col4">
 								<div class="hr-timeline bottom">
 									<div class="timeline-content">
 										<h3>Thi công dự án</h3>
-										<p>Quản lý dự án sẽ giám sát thường xuyên công trình, đảm bảo từ khâu chọn lựa vật liệu, đến khi sản xuất lắp ráp thành phẩm, thi công chính xác theo chất lượng yêu cầu của khách hàng.</p>
+										<p>Quản lý dự án sẽ giám sát thường xuyên công trình, đảm bảo từ khâu chọn lựa vật liệu, đến khi sản xuất lắp ráp thành phẩm, thi công chính xác theo chất lượng yêu cầu của khách hàng. </p>
 										<div class="timeline-thumb">
 											<img src="img/sec_timeline4_icon.png">
 										</div>
@@ -906,19 +896,18 @@
 									</div>
 								</div>
 							</div>
-
-							<div class="col-xs-12 col-sm-12 col-md-5th col-lg-5th col5">
-								<div class="hr-timeline bottom">
+							<div class="col-xs-12 col-sm-12 col-md-5th col5">
+								<div class="hr-timeline last">
 									<div class="timeline-content">
 										<div class="timeline-thumb">
 											<img src="img/sec_timeline5_icon.png">
 										</div>
 										<h3>Bàn giao dự án</h3>
 										<p>Bàn giao dự án, là bước sau cùng, khi tất cả những công trình sáng tạo được hiện thực hoá. SKT Decor& Interior vui mừng mang đến cho khách hàng những thành quả tốt nhất của chúng tôi. Khách hàng và quản lý dự án tiến hành nghiệm thu và thanh lý hợp đồng.</p>
-										<h4>05</h4>
+										<h4>04</h4>
 									</div>
 								</div>
-							</div>  -->
+							</div>
 						</div>
 					</div>
 				</div>
@@ -1039,7 +1028,57 @@
 							<div class="col-xs-12 col-sm-6 col-md-4">
 								<div class="footer-widget">
 									<h3><span>Ý kiến khách hàng</span></h3>
+									<div class="carousel carousel-showmanymoveone slide" id="itemslider">
+							        <div class="carousel-inner">
+							 
+							         	<ul class="owl-carousel testi owl-loaded owl-drag" data-margin="5" data-md-items="1" data-sm-items="1" data-xs-items="1">
+											<div class="owl-stage-outer">
+												<div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 730px;">
+													<div class="owl-item active" style="width: 360px; margin-right: 5px;">
+														<li>
+															<div class="avt">
+																<img class="" src="img/author1_avt.jpg" alt="THAI NGUYEN">
+																<p><strong>THAI NGUYEN</strong>
+																	Q7, HCM
+																</p>
+															</div>
+															<div class="comment"><i class="fa fa-quote-left"></i>SKT Decor &amp; Interior đã giúp thiết kế lên ngôi nhà mà vợ chồng tôi hằng mơ ước, tôi rất hài lòng với không gian, tông màu, cách bài trí nội thất các bạn đã tư vấn và thực hiện. Xin cảm ơn!</div>
+
+														</li>
+													</div>
+												<!-- <div class="owl-item" style="width: 360px; margin-right: 5px;">
+													<li>
+														<div class="avt">
+															<img class="lazy" src="img/author2_avt.jpg" alt="MY NGOC">
+															<p><strong>MY NGOC</strong>
+																Bình Thạnh, HCM
+															</p>
+														</div>
+														<div class="comment"><i class="fa fa-quote-left"></i>Thiết kế đẹp, thi công chuyên nghiệp – đó là cảm nhận khi cty SKT giúp Decor lại căn hộ của tôi. Tuy diện căn hộ nhỏ nhưng nhìn mọi thứ rất hài hòa, dễ thương. Chúc cty ngày càng thành công hơn nữa!</div>
+
+													</li>
+												</div> -->
+										</ul>
+										<div class="owl-nav"><div class="owl-prev disabled"><i class="fa fa-angle-left"></i></div><div class="owl-next"><i class="fa fa-angle-right"></i></div></div>
+											
+							        </div>
+									
+							      </div>
+							      </div>
 								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="copyright clearfix">
+				<div class="container">
+					<div class="inner clearfix">
+						<div class="row">
+							<div class="col-sm-12 a-enter copyright a-center">
+								<span>@Bản quyền thuộc về: <b>Tinmomedia.com</b></span>
+								<span class="fix-line-footer hidden-xs"></span>
+								<span>Cung cấp bởi <a href="#">Sapo</a></span>
 							</div>
 						</div>
 					</div>
@@ -1048,6 +1087,7 @@
 		</footer>
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 		<script src="js/jquery.min.js"></script> 
-		<script src="js/bootstrap.min.js"></script>				
+		<script src="js/bootstrap.min.js"></script>		
+		<script src="js/myjs.js"></script>		
 	</body>
 </html>
