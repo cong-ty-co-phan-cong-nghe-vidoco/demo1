@@ -1,0 +1,156 @@
+@media screen and (width: 360px){
+    #sanpham .item {
+        width: 100%;
+    }
+    .product-box .product-thumbnail a img {
+        max-width: 100%;
+        margin: 0 auto;
+        height: auto;
+    }
+    .cate-item .cate-title a {
+        text-transform: uppercase;
+        color: #48290c;
+        display: block;
+        padding: 10px 0;
+        font-weight: bold;
+    }
+    #sanpham .product-box .bizweb-product-reviews-badge {
+        width: 100%;
+        text-align: center;
+    }
+    #sanpham .product-box .bizweb-product-reviews-badge .bizweb-product-reviews-star i {
+        font-size: 14px;
+    }
+    #sanpham .product-box .price-box>div {
+        width: 100%;
+        text-align: center;
+    }
+    #sanpham .product-box form {
+        width: 100%;
+        text-align: center;
+    }
+    .cate-img img {
+        width: 100%;
+    }
+    .gioi_thieu a img {
+        width: 100%;
+    }
+    .navbar-toggle .icon-bar {
+        border: 1px solid #333;
+    }
+    li.user-list {
+        display: none;
+    }
+    ul.list-inline {
+        display: inline-block;
+        float: none;
+    }
+    .mn-right #cart-total {
+        right: 126px;
+    }
+    nav.navbar {
+        display: none;
+    }
+    .header-main {
+        padding: 0;
+        position: relative;
+    }
+    .timeline-section .timeline-wrapper .hr-timeline .timeline-content .timeline-thumb img {
+        width: 150px;
+        border: 5px solid #ececec;
+        border-radius: 50%;
+        max-width: 100%;
+        height: auto;
+        display: inherit;
+    }
+    .col-md-5th {
+        width: 100%;
+    }
+    .timeline-section:before {
+        left: 15px;
+        right: unset;
+    }
+
+    .timeline-section:before {
+        content: "";
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        top: 0px;
+        bottom: 0px;
+        margin: auto;
+        height: 100%;
+        width: 5px;
+        background: #222222;
+    }
+    .timeline-section:after {
+        content: "";
+        position: absolute;
+        left: unset;
+        right: 15px;
+        top: 0px;
+        bottom: 0px;
+        margin: auto;
+        height: 100%;
+        width: 5px;
+        background: #222222;
+    }
+    .timeline-section:before {
+        left: 15px;
+        right: unset;
+    }
+    .timeline-section:before {
+        content: "";
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        margin: auto;
+        height: 100%;
+        width: 5px;
+        background: #222222;
+    }
+    .timeline-section .timeline-wrapper .hr-timeline {
+        margin-bottom: 15px;
+    }
+    .timeline-section .timeline-wrapper .hr-timeline .timeline-content {
+        width: 100%;
+        position: relative;
+        padding: 0 20px;
+        min-height: unset;
+    }
+    .timeline-section .timeline-wrapper .hr-timeline .timeline-content .timeline-thumb {
+        position: relative;
+        right: 12px;
+        float: right;
+    }
+    .timeline-section .timeline-wrapper .hr-timeline .timeline-content .timeline-thumb:before {
+        right: calc(0% - 42px);
+        left: unset;
+    }   
+    .timeline-section .timeline-wrapper .hr-timeline .timeline-content .timeline-thumb:after {
+        right: calc(0% - 19px);
+        left: unset;
+    }
+    .timeline-section .timeline-wrapper .hr-timeline .timeline-content h3 {
+        text-align: right;
+        margin: 20px 0;
+        width: 100%;
+        float: right;
+    }
+    .timeline-section .timeline-wrapper .hr-timeline .timeline-content h3:before {
+        left: unset;
+    }
+    .timeline-section .timeline-wrapper .hr-timeline .timeline-content p {
+        clear: both;
+    }
+    
+    .timeline-section .timeline-wrapper .hr-timeline .timeline-content h3 {
+        text-align: right;
+        margin: 20px 0;
+        width: 100%;
+        float: right;
+    }
+    .timeline-section .timeline-wrapper .hr-timeline.bottom .timeline-content {
+        padding-top: 150px;
+    }
+}
